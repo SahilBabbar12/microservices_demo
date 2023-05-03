@@ -1,4 +1,4 @@
-package com.knoldus.studioservice;
+package com.example.studioservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -8,7 +8,7 @@
 		<version>3.0.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.knoldus</groupId>
+	<groupId>com.example</groupId>
 	<artifactId>studioservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>studioservice</name>
@@ -45,19 +45,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -107,6 +94,19 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>com.github.spotbugs</groupId>
+				<artifactId>spotbugs-maven-plugin</artifactId>
+				<version>4.4.2</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.7</version>
@@ -122,12 +122,10 @@
 						<goals>
 							<goal>report</goal>
 						</goals>
-
 					</execution>
 				</executions>
 			</plugin>
 		</plugins>
-
 	</build>
 
 </project>

@@ -1,4 +1,4 @@
-package com.knoldus.studioservice;
+package com.example.studioservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
