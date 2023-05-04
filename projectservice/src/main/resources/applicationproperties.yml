@@ -1,0 +1,22 @@
+#server:
+#  port: 8082
+#
+#
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/studio
+#    username: postgres
+#    password: Test@123
+#
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#
+#    show-sql: true
+#
+#
+#
+#
+#
+#
